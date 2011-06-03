@@ -1,14 +1,10 @@
-<!DOCTYPE html>
-<html>
-<head>
-  <title>Batch</title>
-  <%= stylesheet_link_tag :all %>
-  <%= javascript_include_tag :defaults %>
-  <%= csrf_meta_tag %>
-</head>
-<body>
+!!! HTML
+%html
+  %head
+    %title Batch
+    = stylesheet_link_tag :all
+    = javascript_include_tag :defaults
+    = csrf_meta_tag
 
-<%= yield %>
+  = yield
 
-</body>
-</html>
